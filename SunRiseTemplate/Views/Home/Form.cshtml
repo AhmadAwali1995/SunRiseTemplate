@@ -1,0 +1,347 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="whole-body">
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+
+<div class="text-center">
+    <h1 class="display-4 title" id="clientMeasurments">CLIENT MEASUREMENTS</h1>
+</div>
+<div class="">
+    <p class="display-4 category_clientMeasurments">SEAT WIDTH SELECTION</p>
+    <select class="category_clientMeasurments_ddl">
+        <option id="">360</option>
+        <option id="">380</option>
+        <option id="">400</option>
+        <option id="">420</option>
+        <option id="">440</option>
+        <option id="">460</option>
+    </select>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+
+<!--Fork Type-->
+<div class="text-center">
+    <h1 class="display-4 title" id="frontSeat">FRONT SEAT</h1>
+</div>
+<div class="">
+    <p class="display-4 category_frontSeat">Fork Type (mm)</p>
+    <select id="ddlForkType" class="category_frontSeat_ddl">
+        <option id="">
+            --Select Fork Type--
+        </option>
+        <option id="">
+            Hemi Version
+        </option>
+        <option id="">
+            Aluminium (143 mm)
+        </option>
+        <option id="">
+            Aluminium (168 mm)
+        </option>
+    </select>
+
+    <select id="ddlHemi" class="remove">
+        <option id="">
+            400
+        </option>
+        <option id="">
+            420
+        </option>
+    </select>
+
+    <select id="ddlAluminium143" class="remove">
+        <option id="">
+            430
+        </option>
+        <option id="">
+            440
+        </option>
+        <option id="">
+            460
+        </option>
+        <option id="">
+            470
+        </option>
+        <option id="">
+            480
+        </option>
+    </select>
+
+    <select id="ddlAluminium168" class="remove">
+        <option id="">
+            460
+        </option>
+        <option id="">
+            470
+        </option>
+        <option id="">
+            480
+        </option>
+        <option id="">
+            490
+        </option>
+        <option id="">
+            510
+        </option>
+    </select>
+
+</div>
+
+<br />
+<br />
+
+<div class="">
+    <p class="display-4 category_frontSeat">SEAT DEPTH SELECTION</p>
+    <select class="category_frontSeat_ddl">
+        <option id="">
+            360
+        </option>
+        <option id="">
+            380
+        </option>
+        <option id="">
+            400
+        </option>
+        <option id="">
+            420
+        </option>
+        <option id="">
+            440
+        </option>
+        <option id="">
+            460
+        </option>
+    </select>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+
+<div class="text-center">
+    <h1 class="display-4 title" id="SeatUpholstery">Seat Upholstery and Cushions</h1>
+</div>
+<div class="">
+    <p class="display-4 category_SeatUpholstery">Seat Slings</p>
+    <select class="category_SeatUpholstery_ddl">
+        <option id="LFE020014">
+            Seat Sling, nylon, 1 utility bag
+        </option>
+        <option id="LFE020000">
+            Without Seat Sling
+        </option>
+    </select>
+</div>
+
+<br />
+<br />
+
+<div class="">
+    <p class="display-4 category_SeatUpholstery">Seat cushion, cover with zipper, black</p>
+    <select class="category_SeatUpholstery_ddl">
+        <option id="LFE020101">
+            Seat cushion, foam (medium-soft), cover with zipper, black, 30 mm
+        </option>
+        <option id="LFE020102">
+            Seat cushion, foam (medium-soft), cover with zipper, black, 50 mm
+        </option>
+        <option id="LFE020103">
+            Seat cushion, Latex (very soft), cover with zipper, black, 50 mm
+        </option>
+    </select>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+
+<div class="text-center">
+    <h1 class="display-4 title" id="backSeat">BACKREST</h1>
+</div>
+
+<div class="">
+    <p class="display-4 category_backSeat">Backrest height range</p>
+    <select class="category_backSeat_ddl">
+        <option id="LFE020101">
+            250-300 mm
+        </option>
+        <option id="LFE020102">
+            300-350 mm
+        </option>
+        <option id="LFE020103">
+            350-400  mm
+        </option>
+        <option id="LFE020103">
+            400-450  mm
+        </option>
+    </select>
+</div>
+
+<br />
+<br />
+
+<div class="">
+    <p class="display-4 category_backSeat">Backrest angle</p>
+    <select id="ddlBackRestAngle" class="category_backSeat_ddl">
+        <option id="LFE030010">
+            Backrest, fixed (90°)
+        </option>
+        <option id="LFE030101">
+            Backrest, half-folding (to the back)
+        </option>
+        <option id="LFE030031">
+            Backrest, fold-down (to the front)
+        </option>
+        <option id="LFE030012">
+            Backrest, angle-adjustable
+        </option>
+    </select>
+
+    <select id="ddlAngleAdjustable" class="remove">
+        <option id="">78°</option>
+        <option id="">82°</option>
+        <option id="">86°</option>
+        <option id="">90°</option>
+    </select>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+</div>
+
+<div id="table-form">
+
+    <table class="">
+        
+    </table>
+
+</div>
+
+<div class="text-center">
+    <button id="submit">
+        Submit
+    </button>
+    <button id="clear">
+        Clear
+    </button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+
+        $("#ddlForkType").change(function () {
+            $("#ddlHemi").removeClass('remove');
+            $("#ddlAluminium143").removeClass('remove');
+            $("#ddlAluminium168").removeClass('remove');
+
+            $("#ddlHemi").addClass('remove');
+            $("#ddlAluminium143").addClass('remove');
+            $("#ddlAluminium168").addClass('remove');
+            var option = this.value;
+            switch(option) {
+                case 'Hemi Version':
+                  $("#ddlHemi").removeClass('remove');
+                  break;
+                case 'Aluminium (143 mm)':
+                  $("#ddlAluminium143").removeClass('remove');
+                  break;
+                case 'Aluminium (168 mm)':
+                  $("#ddlAluminium168").removeClass('remove');
+                  break;
+                }
+        });
+
+        $("#ddlBackRestAngle").change(function () {
+            $("#ddlAngleAdjustable").removeClass('remove');
+            $("#ddlAngleAdjustable").addClass('remove');
+            var option = this.value;
+            if(option == 'Backrest, angle-adjustable'){
+                $("#ddlAngleAdjustable").removeClass('remove');
+            }
+        });
+
+        $("#submit").click(function (){
+
+            $("#table-form").removeClass('remove');
+            $('#table-form tr').remove();
+            var selections = [];
+            var titles = $(".title")
+            debugger;
+            for(let i=0;i<titles.length; i++){
+                selections.push(titles[i].innerHTML);
+                var categoreis = $('.category_'+titles[i].id)
+                var catDDls = $('.category_'+titles[i].id+'_ddl');
+                for(let j = 0; j<categoreis.length; j++){
+                    let ddl = catDDls[j];
+                    let ddlValue = catDDls[j].options[catDDls[j].selectedIndex].text
+                    if(ddl.id == 'ddlForkType'){
+                        switch(catDDls[j].options[catDDls[j].selectedIndex].text) {
+                            case 'Hemi Version':
+                              ddlValue = ddlValue + ' - ' + $("#ddlHemi option:selected").text();
+                              break;
+                            case 'Aluminium (143 mm)':
+                              ddlValue = ddlValue + ' - ' + $("#ddlAluminium143 option:selected").text();
+                              break;
+                            case 'Aluminium (168 mm)':
+                              ddlValue = ddlValue + ' - ' + $("#ddlAluminium168 option:selected").text();
+                              break;
+                        }
+                    }
+
+                    if(ddl.id == 'ddlBackRestAngle' && catDDls[j].options[catDDls[j].selectedIndex].id == 'LFE030012'){
+                        ddlValue = ddlValue + ' - ' + $("#ddlAngleAdjustable option:selected").text();
+                    }
+
+                    
+                    selections.push(categoreis[j].innerHTML+' - '+ddlValue);
+                }
+            }
+
+            for(let i=0;i<selections.length;i++){
+                $('#table-form').append('<tr><td>'+ selections[i] +'</td></tr>');
+            }
+            
+            $("#whole-body").addClass('remove');
+            
+        });
+
+        $("#clear").click(function (){
+            $("#whole-body").removeClass('remove');
+            $("#table-form").addClass('remove');
+            $('#table-form tr').remove();
+            
+        });
+
+</script>
+
+
+
+
+<style>
+    p {
+        font-size: 45px;
+    }
+    
+    .remove{
+        display:none
+    }
+    </style>
